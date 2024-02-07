@@ -7,6 +7,8 @@ body {
     margin: 0;
 }
 
+/* Side bar Styling */
+
 .container {
         display: grid;
     grid-template-columns: 20% 80%;
@@ -20,11 +22,7 @@ body {
     height: 100vh;
 }
 
-.main {
-    background-color: #4ade80;
-    grid-column: 2/3;
-   height: 100vh;
-}
+
 
 .nav {
     background-color: #f0fdf4;
@@ -58,6 +56,12 @@ padding: 15px;
     color: #d1fae5;
 }
 
+.Icon-text:hover {
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+}
+
 .Icon-text > svg {
     margin: 0px 10px 0px;
 }
@@ -70,4 +74,273 @@ padding: 15px;
 
 .User-Items {
     padding: 15px;
+}
+
+/* Main Styling */
+
+
+.main {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-column: 2/3;
+}
+
+.Account-bar {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-row: 1/2;
+    background-color: #d1fae5;
+}
+
+.Project-bar {
+    grid-row: 2/3;
+    background-color:#4ade80;
+}
+
+
+.Search-part {
+    display: grid;
+    grid-template-columns: 2.8fr 1.2fr;
+    grid-row: 1/2;
+    
+}
+
+.Search-part > .Search-Bar > input {
+    background-color: #14532d;
+    opacity: 30%;
+    border: 0px solid white;
+    border-radius: 25px;
+    width: 700px;
+    height: 30px;
+}
+
+.Search-Bar {
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.Search-Bar > svg {
+    margin: 15px;
+}
+
+.Search-Bar > svg:hover {
+    cursor: pointer;
+}
+
+.profile-tab {
+    position: relative;
+
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-tab > img {
+    border-radius: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.profile-tab > p , .Image-text > p {
+    font-weight: 500;
+}
+
+.Account-part {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+    grid-row: 2/3;
+}
+
+.Image-text {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/2;
+}
+
+.Image-text > img {
+    border-radius: 100%;
+    margin-left: 1rem;
+    
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    margin: 0.3rem;
+}
+
+.text > h2 {
+    position: relative;
+    bottom: 25px;
+}
+
+.Buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    grid-column: 2/3;
+}
+
+button {
+    border: 0px solid black;
+    background-color: #14532d;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 1.4rem;
+    font-size: 1rem;
+    width: 6rem;
+    height: 40px;
+    border-radius: 50px;
+}
+
+/*   Project Bar styling */ 
+.Project-bar {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+}
+
+.Projects-section {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-column: 1/2;
+   gap: 1rem;
+   margin-left: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-left: 8px solid green;
+    height: 200px;
+    width: 400px;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.card-icons {
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 5px;
+}
+
+.card-icons:hover {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.card > p {
+    position: relative;
+    bottom: 2rem;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.section-title {
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 1.2rem;
+}
+
+.second-bar {
+position: absolute;
+left: 1400px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.Announ-bar {
+    grid-row: 1/2;
+}
+
+.Trending-bar {
+    grid-row: 2/3;
+}
+
+.barA, .barT {
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    
+}
+
+.barA {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+
+.stext {
+    position: relative;
+    bottom: 7px;
+    font-size: 0.7rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.SiteM , .CommuinityS, .Updated {
+    position: relative;
+    bottom: 1rem;
+}
+
+.SiteM, .CommuinityS {
+    border-bottom: 3px solid gray;
+}
+
+.sHead {
+    position: relative;
+    left: 1rem;
+}
+
+.barT {
+    display: flex;
+    flex-direction: column;
+}
+
+.pfp-n {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 15px;
+    top: 15px;
+}
+
+.texts {
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+}
+
+.texts > p {
+    font-size: 0.85rem;
+}
+
+.text-name {
+    position: relative;
+    top: 12px;
+}
+
+.pfp-n > img {
+    border-radius: 100%;
+}
+
+.desc {
+    color: gray;
 }
