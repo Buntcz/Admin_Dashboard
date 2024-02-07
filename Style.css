@@ -178,7 +178,7 @@ padding: 15px;
 
 .text > h2 {
     position: relative;
-    bottom: 25px;
+    bottom: 30px;
 }
 
 .Buttons {
@@ -199,6 +199,11 @@ button {
     width: 6rem;
     height: 40px;
     border-radius: 50px;
+}
+
+button:hover {
+    border: 2px solid black;
+    cursor: pointer;
 }
 
 /*   Project Bar styling */ 
@@ -233,6 +238,10 @@ button {
     align-items: flex-end;
     justify-content: flex-end;
     margin: 5px;
+    gap: 30px;
+    position: relative;
+    bottom: 15px;
+    right: 10px;
 }
 
 .card-icons:hover {
@@ -283,19 +292,22 @@ left: 1400px;
 
 .barA {
  display: flex;
- flex-wrap: wrap;
+ flex-direction: column;
+ 
 }
 
 
 .stext {
     position: relative;
-    bottom: 7px;
-    font-size: 0.7rem;
+    bottom: 20px;
+    font-size: 0.6rem;
     padding-right: 1rem;
     padding-left: 1rem;
 }
 
 .SiteM , .CommuinityS, .Updated {
+    display: flex;
+    flex-direction: column;
     position: relative;
     bottom: 1rem;
 }
